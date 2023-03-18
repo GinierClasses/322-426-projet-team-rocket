@@ -1,4 +1,4 @@
-# 322-426-projet-team-rocket
+# 322-426-projet-team-rocket - Good Afternotes
 
 La création de ce repo a pour but de lier le module 322 de M. Galli avec le module 426 de M. Ginier
 
