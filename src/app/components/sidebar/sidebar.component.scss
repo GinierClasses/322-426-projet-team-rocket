@@ -1,0 +1,49 @@
+.sidebar {
+  position: relative;
+  height: 100vh;
+  overflow: auto;
+  width: 260px;
+  border-right: 1px solid black;
+
+  ul {
+    display: block;
+    list-style: none;
+
+    li {
+      a {
+        display: block;
+        text-decoration: none;
+        color: black;
+        padding: 30px 15px;
+        border-bottom: 1px solid black;
+
+        i {
+          font-size: 24px;
+          float: left;
+          margin-right: 15px;
+          line-height: 30px;
+          width: 30px;
+          text-align: center;
+          color: #a9afbb;
+        }
+
+        p {
+          margin: 0;
+          line-height: 30px;
+          font-size: 14px;
+          position: relative;
+          display: block;
+          height: auto;
+          white-space: nowrap;
+        }
+      }
+    }
+
+    .profil {
+      position: absolute;
+      bottom: 0px;
+      width: 100%;
+      border-top: 1px solid black;
+    }
+  }
+}
