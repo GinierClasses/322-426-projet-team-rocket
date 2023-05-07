@@ -7,10 +7,19 @@ import { FormControl, Validators } from '@angular/forms';
   styleUrls: ['./page-login.component.scss'],
 })
 export class PageLoginComponent {
-  email = new FormControl('', [Validators.required, Validators.email]);
+  email = new FormControl('', [
+    Validators.required,
+    Validators.pattern(/^[A-Za-z0-9._%+-]+@eduvaud\.ch$/),
+  ]);
   password = new FormControl('', [
     Validators.required,
-    Validators.minLength(8),
+    // At least one uppercase letter ((?=.*[A-Z]))
+    // At least one lowercase letter ((?=.*[a-z]))
+    // At least one special character ((?=.*[!@#$%^&*()_+\-\=[\]{};':"\\|,.<>\/?]))
+    // At least 8 characters long (.{8,})
+    Validators.pattern(
+      /^(?=.*[A-Z])(?=.*[!@#$%^&*()_+\-=[\]{};':"\\|,.<>/?])(?=.*[a-z]).{8,}$/
+    ),
   ]);
 
   getEmailErrorMessage() {
@@ -18,7 +27,11 @@ export class PageLoginComponent {
       return 'Vous devez insérez une adresse email';
     }
 
-    return this.email.hasError('email') ? 'Not a valid email' : '';
+    if (this.email.hasError('pattern')) {
+      return 'Vous devez insérez une adresse email qui se termine par @eduvaud.ch';
+    }
+
+    return '';
   }
 
   getPasswordErrorMessage() {
@@ -26,8 +39,10 @@ export class PageLoginComponent {
       return 'Vous devez insérez un mot de passe';
     }
 
-    return this.password.hasError('minlength')
-      ? 'Votre mot de passe doit contenir au moins 8 caractères'
-      : '';
+    if (this.password.hasError('pattern')) {
+      return 'Votre mot de passe doit contenir au moins 8 caractères, une majuscule et un caractère spécial';
+    }
+
+    return '';
   }
 }
