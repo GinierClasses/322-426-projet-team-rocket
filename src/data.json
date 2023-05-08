@@ -1,7 +1,7 @@
 {
   "modules": [
     { "id": 1, "name": "json-server", "number": 230, "description": "Description of the module", "grade": 5},
-    { "id": 1, "name": "module-de-fou", "number": 230, "description": "Description of the module", "grade": 5}
+    { "id": 2, "name": "module-de-fou", "number": 230, "description": "Description of the module", "grade": 5}
   ]
 }
 
