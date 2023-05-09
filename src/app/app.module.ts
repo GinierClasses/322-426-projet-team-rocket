@@ -11,9 +11,10 @@ import { StepperComponent } from './components/stepper/stepper.component';
 import {MatStepperModule} from "@angular/material/stepper";
 import {ReactiveFormsModule} from "@angular/forms";
 import {MatFormFieldModule} from "@angular/material/form-field";
+import { TitleBoxContainerComponent } from './components/title-box-container/title-box-container.component';
 
 @NgModule({
-  declarations: [AppComponent, SidebarComponent, StepperComponent],
+  declarations: [AppComponent, SidebarComponent, StepperComponent, TitleBoxContainerComponent],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MatSidenavModule, MatButtonModule, MatStepperModule, ReactiveFormsModule, MatFormFieldModule],
   providers: [],
   bootstrap: [AppComponent],

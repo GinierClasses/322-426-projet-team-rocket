@@ -1,0 +1,24 @@
+.box-container {
+  display: flex;
+  height: calc(100vh - 140px);
+  flex-direction: column;
+  margin: 70px 100px 70px 360px;
+  border: 1px solid rgba(0, 0, 0, .12);
+  border-radius: 5px;
+  padding: 50px;
+
+  .box-title {
+    margin-top: -72px;
+    margin-left: -84px;
+    background: #FAFAFA;
+    padding: 10px 20px;
+    position: absolute;
+    font-size: 30px;
+  }
+
+  .box-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
