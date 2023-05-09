@@ -1,3 +1,8 @@
+$bg-color: #FAFAFA;
+$primary-color: #FF4081;
+$accent-color: #F50057;
+$warn-color: #F44336;
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -7,6 +12,8 @@
 body {
   height: 100%;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 14px;
+  background-color: $bg-color;
 }
 
 li {
@@ -20,7 +27,6 @@ li {
 .sidebar-container {
   height: 100vh;
 }
-
 
 
 
