@@ -1,0 +1,40 @@
+.pd-container {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  height: 100%;
+
+  .pd-title {
+    margin-bottom: 50px;
+  }
+
+  .pd-description-with-percent {
+    display: flex;
+    width: 100%;
+    margin-bottom: 40px;
+
+    .pd-descripton {
+      width: 70%;
+    }
+
+    .pd-percent {
+      width: 30%;
+      text-align: end;
+    }
+  }
+
+  .pd-link {
+    margin-top: auto;
+    border: 1px solid rgba(0, 0, 0, .12);
+    border-radius: 5px;
+    padding: 50px;
+
+    .pd-title-link {
+      margin-top: -70px;
+      margin-left: -80px;
+      background: #FAFAFA;
+      padding: 10px 20px;
+      position: absolute;
+    }
+  }
+}
