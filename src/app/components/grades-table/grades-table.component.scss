@@ -1,0 +1,33 @@
+.container {
+  width: 80%;
+  height: fit-content;
+  margin: auto;
+
+  table {
+
+    th {
+      text-align: start;
+    }
+
+    a {
+      color: black;
+      margin: 0;
+
+
+      span {
+        font-size: 16px;
+      }
+    }
+
+    #editColumn {
+      text-align: end;
+    }
+
+    tr {
+
+    }
+  }
+}
+
+
+

@@ -7,10 +7,13 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {SidebarComponent} from './components/sidebar/sidebar.component';
 import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatButtonModule} from "@angular/material/button";
+import {PageGradesTableComponent} from './components/page-grades-table/page-grades-table.component';
+import {GradesTableComponent} from "./components/grades-table/grades-table.component";
+import {MatTableModule} from "@angular/material/table";
 
 @NgModule({
-  declarations: [AppComponent, SidebarComponent],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MatSidenavModule, MatButtonModule],
+  declarations: [AppComponent, SidebarComponent, PageGradesTableComponent, GradesTableComponent],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MatSidenavModule, MatButtonModule, MatTableModule],
   providers: [],
   bootstrap: [AppComponent],
 })
