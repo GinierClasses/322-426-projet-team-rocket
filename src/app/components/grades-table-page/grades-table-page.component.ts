@@ -23,7 +23,7 @@ export class GradesTablePageComponent implements OnInit {
       if (this.year == 1) {
         this.title = this.year + "ère année";
       } else {
-        this.title = this.year + "ème années";
+        this.title = this.year + "ème année";
       }
     });
 
