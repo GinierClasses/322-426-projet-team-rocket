@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-title-box-container',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./title-box-container.component.scss']
 })
 export class TitleBoxContainerComponent {
-
+  @Input() dynamicTitle!: string;
 }
