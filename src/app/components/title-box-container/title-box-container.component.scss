@@ -2,10 +2,11 @@
   display: flex;
   height: calc(100vh - 140px);
   flex-direction: column;
-  margin: 70px 100px 70px 360px;
+  margin: 70px 100px;
   border: 1px solid rgba(0, 0, 0, .12);
   border-radius: 5px;
   padding: 50px;
+  overflow: auto;
 
   .box-title {
     margin-top: -72px;
@@ -17,8 +18,7 @@
   }
 
   .box-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    overflow: auto;
+    height: 100%;
   }
 }
