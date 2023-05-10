@@ -1,7 +1,7 @@
 <div class="container">
   <table [dataSource]="dataSource" class="mat-elevation-z8" mat-table>
 
-    <!-- Name Column -->
+    <!-------------------------------------------------- Name Column -------------------------------------------------->
     <ng-container matColumnDef="name">
       <th *matHeaderCellDef id="nameColumn" mat-header-cell>Module</th>
       <td *matCellDef="let element" mat-cell> {{ element.name }}
@@ -12,14 +12,14 @@
     </ng-container>
 
 
-    <!-- Note Column -->
+    <!-------------------------------------------------- Note Column -------------------------------------------------->
     <ng-container matColumnDef="note">
       <th *matHeaderCellDef id="noteColumn" mat-header-cell>Note</th>
       <td *matCellDef="let element" mat-cell> {{ element.note }} </td>
     </ng-container>
 
 
-    <!-- Edit Column -->
+    <!-------------------------------------------------- Edit Column -------------------------------------------------->
     <ng-container matColumnDef="edit">
       <th *matHeaderCellDef id="editColumn" mat-header-cell>
         <a href="#">

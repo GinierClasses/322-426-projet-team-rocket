@@ -11,7 +11,7 @@
 
     a {
       color: black;
-      margin: 0;
+      padding-top: 1px;
 
 
       span {
@@ -23,8 +23,9 @@
       text-align: end;
     }
 
-    tr {
+    td {
 
+      font-size: 10px;
     }
   }
 }
