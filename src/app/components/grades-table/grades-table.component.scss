@@ -1,0 +1,36 @@
+.container {
+  width: auto;
+  margin: 50px;
+
+  table {
+
+    th {
+      text-align: start;
+    }
+
+    a {
+      color: black;
+      padding-top: 1px;
+
+
+      span {
+        font-size: 16px;
+      }
+    }
+
+    #editColumn {
+      text-align: end;
+    }
+
+    td {
+      font-size: 10px;
+    }
+
+    .help {
+      font-size: 10px !important;
+    }
+  }
+}
+
+
+
