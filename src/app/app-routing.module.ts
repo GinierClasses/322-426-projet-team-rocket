@@ -6,7 +6,7 @@ import {GradesTablePageComponent} from "./components/grades-table-page/grades-ta
 
 const routes: Routes = [
   {path: 'stepper', component: StepperComponent},
-  {path: 'grades', component: GradesTablePageComponent}
+  {path: 'grades', component: GradesTablePageComponent},
   {path: 'profil', component: ProfilPageComponent}];
 
 @NgModule({
