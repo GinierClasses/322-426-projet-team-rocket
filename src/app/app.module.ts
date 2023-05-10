@@ -1,5 +1,5 @@
-import {NgModule} from '@angular/core';
-import {BrowserModule} from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
@@ -15,13 +15,13 @@ import {StepperComponent} from "./components/stepper/stepper.component";
 import {MatInputModule} from "@angular/material/input";
 import {GradesTableComponent} from "./components/grades-table/grades-table.component";
 import {MatTableModule} from "@angular/material/table";
-import {PageGradesTableComponent} from "./components/page-grades-table/page-grades-table.component";
+import {GradesTablePageComponent} from "./components/grades-table-page/grades-table-page.component";
+
 
 @NgModule({
-  declarations: [AppComponent, SidebarComponent, StepperComponent, TitleBoxContainerComponent, GradesTableComponent, PageGradesTableComponent],
+  declarations: [AppComponent, SidebarComponent, StepperComponent, TitleBoxContainerComponent, GradesTableComponent, GradesTablePageComponent],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MatSidenavModule, MatButtonModule, MatStepperModule, ReactiveFormsModule, MatFormFieldModule, MatInputModule, MatTableModule],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {
-}
+export class AppModule {}
