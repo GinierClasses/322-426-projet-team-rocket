@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-ponderation',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./ponderation.component.scss']
 })
 export class PonderationComponent {
-
+  title = 'Pondérations';
 }
