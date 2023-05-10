@@ -11,11 +11,21 @@ import {PageGradesTableComponent} from './components/page-grades-table/page-grad
 import {GradesTableComponent} from "./components/grades-table/grades-table.component";
 import {MatTableModule} from "@angular/material/table";
 
+
 @NgModule({
   declarations: [AppComponent, SidebarComponent, PageGradesTableComponent, GradesTableComponent],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MatSidenavModule, MatButtonModule, MatTableModule],
-  providers: [],
-  bootstrap: [AppComponent],
-})
-export class AppModule {
-}
+  import {StepperComponent} from './components/stepper/stepper.component';
+  import {MatStepperModule} from "@angular/material/stepper";
+  import {ReactiveFormsModule} from "@angular/forms";
+  import {MatFormFieldModule} from "@angular/material/form-field";
+  import {TitleBoxContainerComponent} from './components/title-box-container/title-box-container.component';
+
+  @NgModule({
+    declarations: [AppComponent, SidebarComponent, StepperComponent, TitleBoxContainerComponent],
+    imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MatSidenavModule, MatButtonModule, MatStepperModule, ReactiveFormsModule, MatFormFieldModule],
+    providers: [],
+    bootstrap: [AppComponent],
+  })
+  export class AppModule {
+  }
