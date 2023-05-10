@@ -16,11 +16,13 @@ import {MatInputModule} from "@angular/material/input";
 import {GradesTableComponent} from "./components/grades-table/grades-table.component";
 import {MatTableModule} from "@angular/material/table";
 import {GradesTablePageComponent} from "./components/grades-table-page/grades-table-page.component";
+import {ProfilPageComponent} from "./components/profil-page/profil-page.component";
+import {MatCardModule} from "@angular/material/card";
 
 
 @NgModule({
-  declarations: [AppComponent, SidebarComponent, StepperComponent, TitleBoxContainerComponent, GradesTableComponent, GradesTablePageComponent],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MatSidenavModule, MatButtonModule, MatStepperModule, ReactiveFormsModule, MatFormFieldModule, MatInputModule, MatTableModule],
+  declarations: [AppComponent, SidebarComponent, StepperComponent, TitleBoxContainerComponent, GradesTableComponent, GradesTablePageComponent, ProfilPageComponent],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MatSidenavModule, MatButtonModule, MatStepperModule, ReactiveFormsModule, MatFormFieldModule, MatInputModule, MatTableModule, MatCardModule],
   providers: [],
   bootstrap: [AppComponent],
 })
