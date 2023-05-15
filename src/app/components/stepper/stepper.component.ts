@@ -15,6 +15,6 @@ export class StepperComponent {
   });
   isLinear = false;
 
-  constructor(private _formBuilder: FormBuilder) {}
+  constructor(private _formBuilder: FormBuilder) {
+  }
 }
-
