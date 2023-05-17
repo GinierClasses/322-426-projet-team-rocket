@@ -116,6 +116,10 @@
     "schematicCollections": [
       "@angular-eslint/schematics"
     ],
+<<<<<<< HEAD
+    "analytics": "97139462-1400-457f-b101-13b3f97d1563"
+=======
     "analytics": "474b47c1-84d2-4ac1-bb19-40cfd779ae6e"
+>>>>>>> main
   }
 }

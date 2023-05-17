@@ -19,11 +19,15 @@ import {GradesTablePageComponent} from "./components/grades-table-page/grades-ta
 import {ProfilPageComponent} from "./components/profil-page/profil-page.component";
 import {MatCardModule} from "@angular/material/card";
 
+import { HttpClientModule } from '@angular/common/http';
+
+
 
 @NgModule({
   declarations: [AppComponent, SidebarComponent, StepperComponent, TitleBoxContainerComponent, GradesTableComponent, GradesTablePageComponent, ProfilPageComponent],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MatSidenavModule, MatButtonModule, MatStepperModule, ReactiveFormsModule, MatFormFieldModule, MatInputModule, MatTableModule, MatCardModule],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MatSidenavModule, MatButtonModule, MatStepperModule, ReactiveFormsModule, MatFormFieldModule, MatInputModule, MatTableModule, MatCardModule,HttpClientModule,],
   providers: [],
   bootstrap: [AppComponent],
+
 })
 export class AppModule {}
