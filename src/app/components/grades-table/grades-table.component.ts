@@ -5,12 +5,6 @@ import { Observable, forkJoin } from 'rxjs';
 import { ModuleModel } from 'src/app/models/module.model';
 import { ModulesService } from 'src/app/services/modules.service';
 
-export interface coursEPSIC {
-  name: string;
-  note: number;
-}
-
-
 
 @Component({
   selector: 'app-grades-table',
