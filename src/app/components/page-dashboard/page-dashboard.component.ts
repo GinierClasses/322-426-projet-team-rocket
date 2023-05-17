@@ -12,6 +12,7 @@ export class PageDashboardComponent implements OnInit {
   cultureG = "Culture générale";
   informatique = "Informatique";
   baseElargie = "Base élargie";
+  derniereNote = "5 dernières notes";
 
   constructor(
     private route: ActivatedRoute

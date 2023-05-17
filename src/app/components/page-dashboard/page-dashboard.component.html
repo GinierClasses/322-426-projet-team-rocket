@@ -1,21 +1,28 @@
 <app-sidebar>
-  <!------------------------------------------------------- CFC ------------------------------------------------------->
-  <app-title-box-container [dynamicTitle]="cfc" id="cfc">
 
-  </app-title-box-container>
+  <div id="moyennes">
+    <!------------------------------------------------------- CFC ------------------------------------------------------->
+    <app-dashboard-cards-cfc [brancheName]="cfc">
+      <h1>5</h1>
+    </app-dashboard-cards-cfc>
 
-  <!------------------------------------------------ Culture Generale ------------------------------------------------->
-  <app-title-box-container [dynamicTitle]="cultureG">
+    <!------------------------------------------------ Culture Generale ------------------------------------------------->
+    <app-dashboard-cards-grades [brancheName]="cultureG">
+      <h2>5</h2>
+    </app-dashboard-cards-grades>
 
-  </app-title-box-container>
+    <!-------------------------------------------------- Informatique --------------------------------------------------->
+    <app-dashboard-cards-grades [brancheName]="informatique">
+      <h2>5</h2>
+    </app-dashboard-cards-grades>
 
-  <!-------------------------------------------------- Informatique --------------------------------------------------->
-  <app-title-box-container [dynamicTitle]="informatique">
-
-  </app-title-box-container>
-
-  <!-------------------------------------------------- Base Elargie --------------------------------------------------->
-  <app-title-box-container [dynamicTitle]="baseElargie">
-
+    <!-------------------------------------------------- Base Elargie --------------------------------------------------->
+    <app-dashboard-cards-grades [brancheName]="baseElargie">
+      <h2>5</h2>
+    </app-dashboard-cards-grades>
+  </div>
+  <!--------------------------------------------------  --------------------------------------------------->
+  <app-title-box-container [dynamicTitle]="derniereNote">
+    <app-grades-table></app-grades-table>
   </app-title-box-container>
 </app-sidebar>

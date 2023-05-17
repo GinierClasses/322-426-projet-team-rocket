@@ -1,0 +1,26 @@
+.box-container {
+  display: flex;
+  flex-direction: column;
+  margin: 70px 0;
+  border: 1px solid rgba(0, 0, 0, .12);
+  border-radius: 5px;
+  padding: 30px;
+  overflow: auto;
+
+  .box-title {
+    margin-top: -60px;
+    margin-left: -80px;
+    background-color: #FFF;
+    padding: 10px 20px;
+    position: absolute;
+  }
+
+  .box-content {
+    overflow: unset;
+
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+}

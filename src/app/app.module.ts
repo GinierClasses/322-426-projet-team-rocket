@@ -19,10 +19,12 @@ import {GradesTablePageComponent} from "./components/grades-table-page/grades-ta
 import {ProfilPageComponent} from "./components/profil-page/profil-page.component";
 import {MatCardModule} from "@angular/material/card";
 import {PageDashboardComponent} from './components/page-dashboard/page-dashboard.component';
+import {DashboardCardsCfcComponent} from './components/dashboard-cards-cfc/dashboard-cards-cfc.component';
+import { DashboardCardsGradesComponent } from './components/dashboard-cards-grades/dashboard-cards-grades.component';
 
 
 @NgModule({
-  declarations: [AppComponent, SidebarComponent, StepperComponent, TitleBoxContainerComponent, GradesTableComponent, GradesTablePageComponent, ProfilPageComponent, PageDashboardComponent],
+  declarations: [AppComponent, SidebarComponent, StepperComponent, TitleBoxContainerComponent, GradesTableComponent, GradesTablePageComponent, ProfilPageComponent, PageDashboardComponent, DashboardCardsCfcComponent, DashboardCardsGradesComponent],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MatSidenavModule, MatButtonModule, MatStepperModule, ReactiveFormsModule, MatFormFieldModule, MatInputModule, MatTableModule, MatCardModule],
   providers: [],
   bootstrap: [AppComponent],
