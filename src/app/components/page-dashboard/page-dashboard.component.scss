@@ -23,4 +23,16 @@
 }
 
 
+#buttons {
+  display: flex;
+  justify-content: space-around;
 
+  button {
+    background-color: #4350af;
+    color: white;
+    border: none;
+    padding: 10px 13px;
+    border-radius: 5px;
+  }
+
+}
