@@ -1,4 +1,8 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import { MatTableDataSource } from '@angular/material/table';
+import { Observable, forkJoin } from 'rxjs';
+import { ModuleModel } from 'src/app/models/module.model';
+import { ModulesService } from 'src/app/services/modules.service';
 
 export interface coursEPSIC {
   name: string;
@@ -25,7 +29,17 @@ const ELEMENT_DATA: coursEPSIC[] = [
   styleUrls: ['./grades-table.component.scss']
 })
 
-export class GradesTableComponent {
-  displayedColumns: string[] = ['name', 'note', 'edit'];
-  dataSource = ELEMENT_DATA;
+export class GradesTableComponent implements OnInit {
+  displayedColumns: string[] = ['name', 'grade', 'description', 'edit'];
+  dataSource: MatTableDataSource<ModuleModel> = new MatTableDataSource<ModuleModel>();
+
+  constructor(private modulesService: ModulesService) { }
+
+  ngOnInit() {
+    this.modulesService.getModules().subscribe((modules: ModuleModel[]) => {
+      this.dataSource.data = modules;
+    });
+  }
+
+  // ...
 }

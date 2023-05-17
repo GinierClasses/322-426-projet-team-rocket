@@ -1,8 +1,21 @@
 {
   "modules": [
-    { "id": 1, "name": "json-server", "number": 230, "description": "Description of the module", "grade": 5},
-    { "id": 2, "name": "module-de-fou", "number": 230, "description": "Description of the module", "grade": 5}
+    { "id": 1, "name": "Utiliser des bases de données NoSQL", "number": 230, "description": "Description of the module", "grade": 6},
+    { "id": 2, "name": "Décrire des processus métier dans son propre environnement professionnel", "number": 230, "description": "Description of the module", "grade": 3},
+    { "id": 3, "name": "Concevoir et implémenter des interfaces utilisateur", "number": 230, "description": "Description of the module", "grade": 4},
+    { "id": 4, "name": "Concevoir et réaliser des solutions cloud", "number": 230, "description": "Description of the module", "grade": 5},
+    { "id": 5, "name": "Développer un logiciel avec des méthodes agiles", "number": 230, "description": "Description of the module", "grade": 4.5},
+    { "id": 6, "name": "Mettre en œuvre des systèmes de codification, de compression et d'encryptage", "number": 230, "description": "Description of the module", "grade": 6},
+    { "id": 7, "name": "Programmation orientée objet", "number": 230, "description": "Description of the module", "grade": 4.5},
+    { "id": 8, "name": "Utiliser un service avec des conteneurs", "number": 230, "description": "Description of the module", "grade": 5},
+    { "id": 9, "name": "Anglais", "number": 230, "description": "Description of the module", "grade": 5.5},
+    { "id": 10, "name": "Math", "number": 230, "description": "Description of the module", "grade": 3.5},
+    { "id": 11, "name": "ECG", "number": 230, "description": "Description of the module", "grade": 4}
+
+
   ]
+
+
 }
 
 

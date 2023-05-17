@@ -8,6 +8,7 @@ import { ModuleModel } from '../models/module.model';
   providedIn: 'root'
 })
 export class ModulesService {
+  
   constructor(private http: HttpClient) { }
 
   getModules(): Observable<ModuleModel[]> {
