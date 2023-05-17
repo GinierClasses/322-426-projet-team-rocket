@@ -1,37 +1,33 @@
-import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
-import {ModuleModel} from "../models/module.model";
+import { Observable, throwError } from 'rxjs';
+import { catchError, tap } from 'rxjs/operators';
+import { ModuleModel } from '../models/module.model';
 
 @Injectable({
   providedIn: 'root'
 })
-
-export class ModulesService{
-
+export class ModulesService {
   constructor(private http: HttpClient) { }
 
+  getModules(): Observable<ModuleModel[]> {
+    const url = 'http://localhost:3000/modules';
+    return this.http.get<ModuleModel[]>(url);
+  }
 
-
-  getModules(): Observable<any> {
-    const url = 'http://localhost:3000/modules'; // URL du serveur JSON
-
-    console.log(this.http.get<any>(url))
-    return this.http.get<any>(url);
-
-  },
-
-  content_copy
-  /** GET hero by id. Will 404 if id not found */
-  getHero(id: number): Observable<any> {
+  getModule(id: number): Observable<ModuleModel> {
     const url = `http://localhost:3000/modules/${id}`;
-    return this.http.get<Hero>(url).pipe(
-      tap(_ => this.log(`fetched hero id=${id}`)),
-      catchError(this.handleError<Hero>(`getHero id=${id}`))
+    return this.http.get<ModuleModel>(url).pipe(
+      tap(_ => console.log(`fetched module id=${id}`)),
+      catchError(this.handleError<ModuleModel>(`getModule id=${id}`))
     );
   }
 
-
+  private handleError<T>(operation = 'operation', result?: T) {
+    return (error: any): Observable<T> => {
+      console.error(error);
+      // Perform any additional error handling logic here
+      return throwError(error);
+    };
+  }
 }
-
-

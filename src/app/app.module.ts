@@ -7,11 +7,17 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {SidebarComponent} from './components/sidebar/sidebar.component';
 import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatButtonModule} from "@angular/material/button";
+import { StepperComponent } from './components/stepper/stepper.component';
+import {MatStepperModule} from "@angular/material/stepper";
+import {ReactiveFormsModule} from "@angular/forms";
+import {MatFormFieldModule} from "@angular/material/form-field";
 import { HttpClientModule } from '@angular/common/http';
 
+
+
 @NgModule({
-  declarations: [AppComponent, SidebarComponent],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MatSidenavModule, MatButtonModule,HttpClientModule,],
+  declarations: [AppComponent, SidebarComponent, StepperComponent],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MatSidenavModule, MatButtonModule, MatStepperModule, ReactiveFormsModule, MatFormFieldModule,HttpClientModule,],
   providers: [],
   bootstrap: [AppComponent],
 
