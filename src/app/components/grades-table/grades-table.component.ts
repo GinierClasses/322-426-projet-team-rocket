@@ -1,7 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import { MatTableDataSource } from '@angular/material/table';
 import { ActivatedRoute, ParamMap } from '@angular/router';
-import { Observable, forkJoin } from 'rxjs';
 import { ModuleModel } from 'src/app/models/module.model';
 import { ModulesService } from 'src/app/services/modules.service';
 
