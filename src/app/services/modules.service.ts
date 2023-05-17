@@ -11,10 +11,18 @@ export class ModulesService {
   
   constructor(private http: HttpClient) { }
 
+  
   getModules(): Observable<ModuleModel[]> {
     const url = 'http://localhost:3000/modules';
     return this.http.get<ModuleModel[]>(url);
   }
+
+
+  getModulesByYear(year: number): Observable<ModuleModel[]> {
+  const url = `http://localhost:3000/modules?year=${year}`;
+  return this.http.get<ModuleModel[]>(url);
+}
+
 
   getModule(id: number): Observable<ModuleModel> {
     const url = `http://localhost:3000/modules/${id}`;

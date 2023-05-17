@@ -4,5 +4,6 @@ export interface ModuleModel {
   number: number;
   description: string;
   grade: number
+  year:number
 
 }
