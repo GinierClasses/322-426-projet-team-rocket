@@ -1,19 +1,32 @@
 {
   "modules": [
-    { "id": 1, "name": "Utiliser des bases de données NoSQL", "number": 230, "description": "Description of the module", "grade": 6, "year": 4},
-    { "id": 2, "name": "Décrire des processus métier dans son propre environnement professionnel", "number": 230, "description": "Description of the module", "grade": 3, "year": 4},
-    { "id": 3, "name": "Concevoir et implémenter des interfaces utilisateur", "number": 230, "description": "Description of the module", "grade": 4, "year": 4},
-    { "id": 4, "name": "Concevoir et réaliser des solutions cloud", "number": 230, "description": "Description of the module", "grade": 5, "year": 4},
-    { "id": 5, "name": "Développer un logiciel avec des méthodes agiles", "number": 230, "description": "Description of the module", "grade": 4.5, "year": 4},
-    { "id": 6, "name": "Mettre en œuvre des systèmes de codification, de compression et d'encryptage", "number": 230, "description": "Description of the module", "grade": 6, "year": 4},
-    { "id": 7, "name": "Programmation orientée objet", "number": 230, "description": "Description of the module", "grade": 4.5, "year": 4},
-    { "id": 8, "name": "Utiliser un service avec des conteneurs", "number": 230, "description": "Description of the module", "grade": 5, "year": 4},
-    { "id": 9, "name": "Anglais", "number": 230, "description": "Description of the module", "grade": 5.5, "year": 4},
-    { "id": 10, "name": "Math", "number": 230, "description": "Description of the module", "grade": 3.5, "year": 4},
-    { "id": 11, "name": "ECG", "number": 230, "description": "Description of the module", "grade": 4, "year": 4}
-
+    { "id": 1, "name": "Module 165 - Utiliser des bases de données NoSQL",  "description": "Description du module", "grade": 6, "year": 2},
+    { "id": 2, "name": "Module 254 - Décrire des processus métier dans son propre environnement professionnel",  "description": "Description du module", "grade": 3, "year": 2},
+    { "id": 3, "name": "Module 322 - Concevoir et implémenter des interfaces utilisateur",  "description": "Description du module", "grade": 4, "year": 2},
+    { "id": 4, "name": "Module 346 - Concevoir et réaliser des solutions cloud",  "description": "Description du module", "grade": 5, "year": 2},
+    { "id": 5, "name": "Module 426 - Développer un logiciel avec des méthodes agiles",  "description": "Description du module", "grade": 4.5, "year": 2},
+    { "id": 6, "name": "Module 114 - Mettre en œuvre des systèmes de codification, de compression et d'encryptage",  "description": "Description du module", "grade": 6, "year": 2},
+    { "id": 7, "name": "Module 320 - Programmation orientée objet", "description": "Description du module", "grade": 4.5, "year": 2},
+    { "id": 8, "name": "Module 347 - Utiliser un service avec des conteneurs",  "description": "Description du module", "grade": 5, "year": 2},
+    { "id": 9, "name": "Anglais",  "description": "Description du module", "grade": 5.5, "year": 2},
+    { "id": 10, "name": "Math",  "description": "Description du module", "grade": 3.5, "year": 2},
+    { "id": 11, "name": "ECG",  "description": "Description du module", "grade": 4, "year": 2},
+    { "id": 12, "name": "Module 117 - Informatique pour petite entreprise",  "description": "Description du module", "grade": 4, "year": 1},
+    { "id": 13, "name": "Module 122 - Automatiser des processus à l'aide de script", "description": "Description du module", "grade": 4, "year": 1},
+    { "id": 14, "name": "Module  162 - Analyser et modéliser des données",  "description": "Description du module", "grade": 4, "year": 1},
+    { "id": 15, "name": "Module 164 - Crée des bases de données et y insérer des données",  "description": "Description du module", "grade": 4, "year": 1},
+    { "id": 16, "name": "Module 231 - Appliquer la protection et la sécurité des données", "description": "Description du module", "grade": 4, "year": 1},
+    { "id": 17, "name": "Module 293 - Crée et publier un site web ",  "description": "Description du module", "grade": 4, "year": 1},
+    { "id": 18, "name": "Module 319 - Concevoir et implémenter des applications",  "description": "Description du module", "grade": 4, "year": 1},
+    { "id": 19, "name": "Module 431 - Executer des mandats IT",  "description": "Description du module", "grade": 4, "year": 1},
+    { "id": 9, "name": "Anglais",  "description": "Description du module", "grade": 4.5, "year": 1},
+    { "id": 10, "name": "Math",  "description": "Description du module", "grade": 4, "year": 1},
+    { "id": 11, "name": "ECG",  "description": "Description du module", "grade": 5.5, "year": 1}
 
   ]
+
+
+
 
 
 }
