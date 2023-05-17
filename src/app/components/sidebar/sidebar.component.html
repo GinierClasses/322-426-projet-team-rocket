@@ -1,5 +1,4 @@
-<mat-sidenav-container class="sidebar-container" color="primary">
-  <button (click)="sidenav.toggle()" color="primary" mat-icon-button><i class="material-icons">menu</i></button>
+<mat-sidenav-container class="sidebar-container">
   <mat-sidenav #sidenav class="sidebar" mode="side" opened>
     <ul>
       <li>
@@ -9,35 +8,36 @@
         </a>
       </li>
       <li>
-        <a color="primary" href="#" mat-raised-button>
+        <a [queryParams]="{ year: 1 }" [routerLink]="'/grades'" color="primary" mat-raised-button>
           <i class="material-icons">school</i>
           <p>1ère année</p>
         </a>
       </li>
       <li>
-        <a color="primary" href="#" mat-raised-button>
+        <a [queryParams]="{ year: 2 }" [routerLink]="'/grades'" color="primary" href="#" mat-raised-button>
           <i class="material-icons">school</i>
           <p>2ème années</p>
         </a>
       </li>
       <li>
-        <a color="primary" href="#" mat-raised-button>
+        <a [queryParams]="{ year: 3 }" [routerLink]="'/grades'" color="primary" href="#" mat-raised-button>
           <i class="material-icons">school</i>
           <p>3ème années</p>
         </a>
       </li>
       <li>
-        <a color="primary" href="#" mat-raised-button>
+        <a [queryParams]="{ year: 4 }" [routerLink]="'/grades'" color="primary" href="#" mat-raised-button>
           <i class="material-icons">school</i>
           <p>4ème années</p>
         </a>
       </li>
       <li>
-        <a color="accent" href="#" mat-raised-button>
+        <a color="primary" [routerLink]="'/profil'" mat-raised-button>
           <i class="material-icons">person</i>
           <p>Profil</p>
         </a>
       </li>
     </ul>
   </mat-sidenav>
+  <ng-content/>
 </mat-sidenav-container>
