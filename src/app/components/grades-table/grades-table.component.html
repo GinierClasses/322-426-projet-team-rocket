@@ -3,17 +3,16 @@
 
     <!-- Name Column -->
     <ng-container matColumnDef="name">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header>Module</th>
-      <td mat-cell *matCellDef="let module">{{ module.name }}</td>
+      <th *matHeaderCellDef mat-header-cell mat-sort-header>Module</th>
+      <td *matCellDef="let module" mat-cell>{{ module.name }}</td>
     </ng-container>
 
     <!-- Grade Column -->
     <ng-container matColumnDef="grade">
-      <th mat-header-cell *matHeaderCellDef mat-sort-header>Note</th>
-      <td mat-cell *matCellDef="let module">{{ module.grade }}</td>
+      <th *matHeaderCellDef mat-header-cell mat-sort-header>Note</th>
+      <td *matCellDef="let module" mat-cell>{{ module.grade }}</td>
     </ng-container>
 
-   
 
     <!-- Edit Column -->
     <ng-container matColumnDef="edit">
@@ -28,4 +27,6 @@
     <tr *matHeaderRowDef="displayedColumns" mat-header-row></tr>
     <tr *matRowDef="let row; columns: displayedColumns;" mat-row></tr>
   </table>
+
+  <button routerLink="/stepper">Ajouter une note</button>
 </div>
