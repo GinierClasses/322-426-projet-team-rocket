@@ -1,25 +1,21 @@
 <div class="container">
-  <table [dataSource]="dataSource" class="mat-elevation-z8" mat-table>
+  <table [dataSource]="dataSource" class="mat-elevation-z8" mat-table matSort>
 
-    <!-------------------------------------------------- Name Column -------------------------------------------------->
+    <!-- Name Column -->
     <ng-container matColumnDef="name">
-      <th *matHeaderCellDef id="nameColumn" mat-header-cell>Module</th>
-      <td *matCellDef="let element" mat-cell> {{ element.name }}
-        <a href="#">
-          <span class="material-icons help">help</span>
-        </a>
-      </td>
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Module</th>
+      <td mat-cell *matCellDef="let module">{{ module.name }}</td>
     </ng-container>
 
-
-    <!-------------------------------------------------- Note Column -------------------------------------------------->
-    <ng-container matColumnDef="note">
-      <th *matHeaderCellDef id="noteColumn" mat-header-cell>Note</th>
-      <td *matCellDef="let element" mat-cell> {{ element.note }} </td>
+    <!-- Grade Column -->
+    <ng-container matColumnDef="grade">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Note</th>
+      <td mat-cell *matCellDef="let module">{{ module.grade }}</td>
     </ng-container>
 
+   
 
-    <!-------------------------------------------------- Edit Column -------------------------------------------------->
+    <!-- Edit Column -->
     <ng-container matColumnDef="edit">
       <th *matHeaderCellDef id="editColumn" mat-header-cell>
         <a href="#">
