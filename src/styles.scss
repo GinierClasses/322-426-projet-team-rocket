@@ -1,7 +1,5 @@
-$bg-color: #FAFAFA;
-$primary-color: #FF4081;
-$accent-color: #F50057;
-$warn-color: #F44336;
+$bg-color: #FFF;
+
 
 * {
   box-sizing: border-box;
@@ -13,6 +11,9 @@ body {
   height: 100%;
   font-family: Roboto, "Helvetica Neue", sans-serif;
   font-size: 14px;
+}
+
+.mat-drawer-container {
   background-color: $bg-color;
 }
 
