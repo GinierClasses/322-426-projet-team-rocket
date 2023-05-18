@@ -6,7 +6,7 @@ import {GradesTablePageComponent} from "./components/grades-table-page/grades-ta
 import {PonderationComponent} from "./components/ponderation/ponderation.component";
 
 const routes: Routes = [
-  {path: 'ponderations', component: PonderationComponent}
+  {path: 'ponderations', component: PonderationComponent},
   {path: 'stepper', component: StepperComponent},
   {path: 'grades', component: GradesTablePageComponent},
   {path: 'profil', component: ProfilPageComponent}];

@@ -25,7 +25,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
-  declarations: [AppComponent, SidebarComponent, StepperComponent, TitleBoxContainerComponent, GradesTableComponent, GradesTablePageComponent, ProfilPageComponent],
+  declarations: [AppComponent, SidebarComponent, StepperComponent, TitleBoxContainerComponent, GradesTableComponent, GradesTablePageComponent, ProfilPageComponent, PonderationComponent],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MatSidenavModule, MatButtonModule, MatStepperModule, ReactiveFormsModule, MatFormFieldModule, MatInputModule, MatTableModule, MatCardModule,HttpClientModule,],
   providers: [],
   bootstrap: [AppComponent],
