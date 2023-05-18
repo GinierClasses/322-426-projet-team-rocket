@@ -2,7 +2,7 @@
   <mat-sidenav #sidenav class="sidebar" mode="side" opened>
     <ul>
       <li>
-        <a color="accent" href="#" mat-raised-button>
+        <a [routerLink]="'/dashboard'" color="accent" href="#" mat-raised-button>
           <i class="material-icons">dashboard</i>
           <p>Dashboard</p>
         </a>
@@ -32,7 +32,7 @@
         </a>
       </li>
       <li>
-        <a color="primary" [routerLink]="'/profil'" mat-raised-button>
+        <a [routerLink]="'/profil'" color="primary" mat-raised-button>
           <i class="material-icons">person</i>
           <p>Profil</p>
         </a>
