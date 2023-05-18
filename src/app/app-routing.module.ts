@@ -8,11 +8,13 @@ import {PageDashboardComponent} from "./components/page-dashboard/page-dashboard
 
 
 const routes: Routes = [
+  {path: '', pathMatch: 'full', redirectTo: 'dashboard'},
   {path: 'ponderations', component: PonderationComponent},
   {path: 'stepper', component: StepperComponent},
   {path: 'grades', component: GradesTablePageComponent},
   {path: 'profil', component: ProfilPageComponent},
-  {path: 'dashboard', component: PageDashboardComponent}
+  {path: 'dashboard', component: PageDashboardComponent},
+  {path: '**', component: PageDashboardComponent}
 ];
 
 @NgModule({
