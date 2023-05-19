@@ -1,8 +1,5 @@
 .container {
-  width: 100%;
-  margin: 50px;
-  text-align: center;
-
+  width: auto;
 
   table {
     box-shadow: none;
@@ -14,6 +11,7 @@
     a {
       color: black;
       padding-top: 1px;
+
 
       span {
         font-size: 16px;
@@ -31,15 +29,6 @@
     .help {
       font-size: 10px !important;
     }
-  }
-
-  button {
-    background-color: #4350af;
-    color: white;
-    border: none;
-    padding: 10px 13px;
-    border-radius: 5px;
-    margin-top: 50px;
   }
 }
 
