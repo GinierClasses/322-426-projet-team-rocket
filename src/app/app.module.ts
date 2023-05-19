@@ -30,7 +30,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MatSidenavModule, MatButtonModule, MatStepperModule, Reactive, MatFormFieldModule, MatInputModule, MatTableModule, MatCardModule,HttpClientModule, ReactiveFormsModule, FormsModule, MatSelectModule,],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MatSidenavModule, MatButtonModule, MatStepperModule, MatFormFieldModule, MatInputModule, MatTableModule, MatCardModule,HttpClientModule, ReactiveFormsModule, FormsModule, MatSelectModule,],
   declarations: [AppComponent, SidebarComponent, StepperComponent, TitleBoxContainerComponent, GradesTableComponent, GradesTablePageComponent, ProfilPageComponent, PageDashboardComponent, DashboardCardsCfcComponent, DashboardCardsGradesComponent, DashboardGradesTablesComponent, DashboardGradesTableCardComponent, PonderationComponent, ChangeGradeComponent],
   providers: [],
   bootstrap: [AppComponent],
