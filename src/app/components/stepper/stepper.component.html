@@ -1,56 +1,59 @@
-<app-title-box-container [dynamicTitle]="title" class="stepper-box-container">
-  <mat-stepper [linear]="isLinear" #stepper class="stepper-container">
-    <mat-step [stepControl]="firstFormGroup">
-      <form [formGroup]="firstFormGroup">
-        <ng-template matStepLabel>Choisir la matière/module</ng-template>
-        <mat-form-field appearance="fill" class="stepper-field">
-          <mat-label>Module/Matière</mat-label>
-          <mat-select>
-            <mat-option>Mathématique</mat-option>
-            <mat-option>Non</mat-option>
-            <mat-option>Zdex</mat-option>
-            <mat-option>clique</mat-option>
-          </mat-select>
-        </mat-form-field>
-        <div class="button-stepper">
-          <button mat-button matStepperPrevious>Annuler</button>
-          <button mat-button matStepperNext>Suivant</button>
-        </div>
-      </form>
-    </mat-step>
-    <mat-step [stepControl]="secondFormGroup" label="Ajouter la note">
-      <form [formGroup]="secondFormGroup">
-        <ng-template matStepLabel>Ajouter la note</ng-template>
-        <mat-form-field appearance="fill" class="stepper-field-grade">
-          <mat-label>Note</mat-label>
-          <mat-select>
-            <mat-option>6</mat-option>
-            <mat-option>5,5</mat-option>
-            <mat-option>5</mat-option>
-            <mat-option>4,5</mat-option>
-            <mat-option>4</mat-option>
-            <mat-option>3,5</mat-option>
-            <mat-option>3</mat-option>
-            <mat-option>2,5</mat-option>
-            <mat-option>2</mat-option>
-            <mat-option>1,5</mat-option>
-            <mat-option>1</mat-option>
-          </mat-select>
-        </mat-form-field>
+<app-sidebar>
+  <app-title-box-container [dynamicTitle]="title" class="stepper-box-container">
+    <mat-stepper [linear]="isLinear" #stepper class="stepper-container">
+      <mat-step [stepControl]="firstFormGroup">
+        <form [formGroup]="firstFormGroup">
+          <ng-template matStepLabel>Choisir la matière/module</ng-template>
+          <mat-form-field appearance="fill" class="stepper-field">
+            <mat-label>Module/Matière</mat-label>
+            <mat-select>
+              <mat-option>Mathématique</mat-option>
+              <mat-option>Non</mat-option>
+              <mat-option>Zdex</mat-option>
+              <mat-option>clique</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <div class="button-stepper">
+            <button mat-button matStepperPrevious>Annuler</button>
+            <button mat-button matStepperNext>Suivant</button>
+          </div>
+        </form>
+      </mat-step>
+      <mat-step [stepControl]="secondFormGroup" label="Ajouter la note">
+        <form [formGroup]="secondFormGroup">
+          <ng-template matStepLabel>Ajouter la note</ng-template>
+          <mat-form-field appearance="fill" class="stepper-field-grade">
+            <mat-label>Note</mat-label>
+            <mat-select>
+              <mat-option>6</mat-option>
+              <mat-option>5,5</mat-option>
+              <mat-option>5</mat-option>
+              <mat-option>4,5</mat-option>
+              <mat-option>4</mat-option>
+              <mat-option>3,5</mat-option>
+              <mat-option>3</mat-option>
+              <mat-option>2,5</mat-option>
+              <mat-option>2</mat-option>
+              <mat-option>1,5</mat-option>
+              <mat-option>1</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <div class="button-stepper">
+            <button mat-button matStepperPrevious>Précédent</button>
+            <button mat-button matStepperNext>Suivant</button>
+          </div>
+        </form>
+      </mat-step>
+      <mat-step>
+        <ng-template matStepLabel>Validation</ng-template>
+        <p>Vous allez ajouté la note de 5 au Module 431 - Exécuter des mandats de manière autonome dans un environnement
+          informatique, est-ce que vous valider ?</p>
         <div class="button-stepper">
           <button mat-button matStepperPrevious>Précédent</button>
-          <button mat-button matStepperNext>Suivant</button>
+          <button mat-button>Valider</button>
         </div>
-      </form>
-    </mat-step>
-    <mat-step>
-      <ng-template matStepLabel>Validation</ng-template>
-      <p>Vous allez ajouté la note de 5 au Module 431 - Exécuter des mandats de manière autonome dans un environnement
-        informatique, est-ce que vous valider ?</p>
-      <div class="button-stepper">
-        <button mat-button matStepperPrevious>Précédent</button>
-        <button mat-button>Valider</button>
-      </div>
-    </mat-step>
-  </mat-stepper>
-</app-title-box-container>
+      </mat-step>
+    </mat-stepper>
+  </app-title-box-container>
+</app-sidebar>
+
