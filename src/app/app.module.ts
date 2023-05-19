@@ -8,7 +8,7 @@ import {SidebarComponent} from './components/sidebar/sidebar.component';
 import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatButtonModule} from "@angular/material/button";
 import {MatStepperModule} from "@angular/material/stepper";
-import {ReactiveFormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {TitleBoxContainerComponent} from "./components/title-box-container/title-box-container.component";
 import {StepperComponent} from "./components/stepper/stepper.component";
@@ -18,6 +18,8 @@ import {MatTableModule} from "@angular/material/table";
 import {GradesTablePageComponent} from "./components/grades-table-page/grades-table-page.component";
 import {ProfilPageComponent} from "./components/profil-page/profil-page.component";
 import {MatCardModule} from "@angular/material/card";
+import {MatSelectModule} from "@angular/material/select";
+import { ChangeGradeComponent } from './components/change-grade/change-grade.component';
 import { PonderationComponent } from './components/ponderation/ponderation.component';
 import {PageDashboardComponent} from './components/page-dashboard/page-dashboard.component';
 import {DashboardCardsCfcComponent} from './components/dashboard-cards-cfc/dashboard-cards-cfc.component';
@@ -27,10 +29,9 @@ import { DashboardGradesTableCardComponent } from './components/dashboard-grades
 import { HttpClientModule } from '@angular/common/http';
 
 
-
 @NgModule({
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MatSidenavModule, MatButtonModule, MatStepperModule, ReactiveFormsModule, MatFormFieldModule, MatInputModule, MatTableModule, MatCardModule,HttpClientModule,],
-  declarations: [AppComponent, SidebarComponent, StepperComponent, TitleBoxContainerComponent, GradesTableComponent, GradesTablePageComponent, ProfilPageComponent, PageDashboardComponent, DashboardCardsCfcComponent, DashboardCardsGradesComponent, DashboardGradesTablesComponent, DashboardGradesTableCardComponent, PonderationComponent],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MatSidenavModule, MatButtonModule, MatStepperModule, MatFormFieldModule, MatInputModule, MatTableModule, MatCardModule,HttpClientModule, ReactiveFormsModule, FormsModule, MatSelectModule,],
+  declarations: [AppComponent, SidebarComponent, StepperComponent, TitleBoxContainerComponent, GradesTableComponent, GradesTablePageComponent, ProfilPageComponent, PageDashboardComponent, DashboardCardsCfcComponent, DashboardCardsGradesComponent, DashboardGradesTablesComponent, DashboardGradesTableCardComponent, PonderationComponent, ChangeGradeComponent],
   providers: [],
   bootstrap: [AppComponent],
 
