@@ -1,26 +1,23 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, throwError } from 'rxjs';
-import { ModuleModel } from '../models/module.model';
+import { PonderationModel } from '../models/ponderation-model';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ModulesService {
+export class PonderationService {
   
   constructor(private http: HttpClient) { }
 
   
-  getModules(): Observable<ModuleModel[]> {
-    const url = 'http://localhost:3000/modules';
-    return this.http.get<ModuleModel[]>(url);
+  getPonderations(): Observable<PonderationModel[]> {
+    const url = 'http://localhost:3000/ponderations';
+    return this.http.get<PonderationModel[]>(url);
   }
 
 
-  getModulesByYear(year: number): Observable<ModuleModel[]> {
-  const url = `http://localhost:3000/modules?year=${year}`;
-  return this.http.get<ModuleModel[]>(url);
-}
+  
 
 
  
