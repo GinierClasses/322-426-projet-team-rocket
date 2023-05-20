@@ -5,7 +5,7 @@
         <ng-template matStepLabel>Choisir la matière/module</ng-template>
         <mat-form-field appearance="fill" class="stepper-field">
           <mat-label>Module/Matière</mat-label>
-          <mat-select formControlName="selectedModule">
+          <mat-select formControlName="selectedModule" (selectionChange)="onModuleSelectionChange($event)">
             <mat-option *ngFor="let module of modules" [value]="module">{{ module.name }}</mat-option>
           </mat-select>
         </mat-form-field>
@@ -20,7 +20,7 @@
         <ng-template matStepLabel>Ajouter la note</ng-template>
         <mat-form-field appearance="fill" class="stepper-field-grade">
           <mat-label>Note</mat-label>
-          <mat-select formControlName="selectedGrade">
+          <mat-select formControlName="selectedGrade" (selectionChange)="onGradeSelectionChange($event)">
             <mat-option value="6">6</mat-option>
             <mat-option value="5.5">5.5</mat-option>
             <mat-option value="5">5</mat-option>
@@ -42,8 +42,9 @@
     </mat-step>
     <mat-step>
       <ng-template matStepLabel>Validation</ng-template>
-      <p>Vous allez ajouter la note  au module  est-ce que vous validez ?</p>
-      <div class="button-stepper">
+      <p *ngIf="selectedModule && selectedGrade">
+        Vous allez ajouter la note {{ selectedGrade }} au module {{ selectedModule.name }} - {{ selectedModule.description }}.
+      </p>      <div class="button-stepper">
         <button mat-button matStepperPrevious>Précédent</button>
         <button mat-button>Valider</button>
       </div>
