@@ -1,15 +1,15 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { ModulesService } from 'src/app/services/modules.service';
-import { ModuleModel } from 'src/app/models/module.model';
-import { MatStepper } from '@angular/material/stepper';
+import {Component, OnInit, ViewChild} from '@angular/core';
+import {FormBuilder, FormGroup, Validators} from '@angular/forms';
+import {ModulesService} from 'src/app/services/modules.service';
+import {ModuleModel} from 'src/app/models/module.model';
+import {MatStepper} from '@angular/material/stepper';
 
 @Component({
-  selector: 'app-stepper',
-  templateUrl: './stepper.component.html',
-  styleUrls: ['./stepper.component.scss']
+  selector: 'app-add-grade',
+  templateUrl: './add-grade.component.html',
+  styleUrls: ['./add-grade.component.scss']
 })
-export class StepperComponent implements OnInit {
+export class AddGradeComponent implements OnInit {
 
   title = "Ajouter une note";
   isLinear = false;
@@ -17,19 +17,18 @@ export class StepperComponent implements OnInit {
   selectedModule: ModuleModel | undefined;
   selectedGrade: string | undefined;
   @ViewChild('stepper') stepper: MatStepper | undefined;
+  firstFormGroup: FormGroup = this._formBuilder.group({
+    selectedModule: ['', Validators.required],
+  });
+  secondFormGroup: FormGroup = this._formBuilder.group({
+    selectedGrade: ['', Validators.required],
+  });
 
   constructor(
     private _formBuilder: FormBuilder,
     private moduleService: ModulesService
-  ) {}
-
-  firstFormGroup: FormGroup = this._formBuilder.group({
-    selectedModule: ['', Validators.required],
-  });
-
-  secondFormGroup: FormGroup = this._formBuilder.group({
-    selectedGrade: ['', Validators.required],
-  });
+  ) {
+  }
 
   ngOnInit() {
     this.moduleService.getModules().subscribe((modules: ModuleModel[]) => {
@@ -37,7 +36,6 @@ export class StepperComponent implements OnInit {
     });
   }
 
-  
 
   onModuleSelectionChange(event: any) {
     this.selectedModule = event.value;
@@ -47,7 +45,7 @@ export class StepperComponent implements OnInit {
     this.selectedGrade = event.value;
   }
 
-  
+
   onSubmit() {
     const moduleSelectionne = this.selectedModule;
     const noteSelectionnee = this.selectedGrade;
