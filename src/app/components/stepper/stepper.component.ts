@@ -47,12 +47,22 @@ export class StepperComponent implements OnInit {
     this.selectedGrade = event.value;
   }
 
+  
   onSubmit() {
     const moduleSelectionne = this.selectedModule;
     const noteSelectionnee = this.selectedGrade;
     if (moduleSelectionne && noteSelectionnee) {
-      const phrase = `Vous allez ajouter la note ${noteSelectionnee} au module ${moduleSelectionne.name} - ${moduleSelectionne.description}.`;
-      console.log(phrase);
+      // Mettez à jour le module avec la nouvelle note
+      this.moduleService.updateModule(moduleSelectionne, noteSelectionnee)
+        .subscribe(updatedModule => {
+          // Le module a été mis à jour avec succès
+          const phrase = `Vous avez ajouté la note ${noteSelectionnee} au module ${updatedModule.name} - ${updatedModule.description}.`;
+          console.log(phrase);
+        }, error => {
+          // Une erreur s'est produite lors de la mise à jour du module
+          console.error('Erreur lors de la mise à jour du module', error);
+        });
     }
   }
+
 }
