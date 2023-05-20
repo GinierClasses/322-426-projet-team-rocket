@@ -19,20 +19,21 @@ import {GradesTablePageComponent} from "./components/grades-table-page/grades-ta
 import {ProfilPageComponent} from "./components/profil-page/profil-page.component";
 import {MatCardModule} from "@angular/material/card";
 import {MatSelectModule} from "@angular/material/select";
-import { ChangeGradeComponent } from './components/change-grade/change-grade.component';
-import { PonderationComponent } from './components/ponderation/ponderation.component';
+import {ChangeGradeComponent} from './components/change-grade/change-grade.component';
+import {PonderationComponent} from './components/ponderation/ponderation.component';
 import {PageDashboardComponent} from './components/page-dashboard/page-dashboard.component';
 import {DashboardCardsCfcComponent} from './components/dashboard-cards-cfc/dashboard-cards-cfc.component';
-import { DashboardCardsGradesComponent } from './components/dashboard-cards-grades/dashboard-cards-grades.component';
-import { DashboardGradesTablesComponent } from './components/dashboard-grades-tables/dashboard-grades-tables.component';
-import { DashboardGradesTableCardComponent } from './components/dashboard-grades-table-card/dashboard-grades-table-card.component';
-import { HttpClientModule } from '@angular/common/http';
-import { ReportProblemComponent } from './components/report-problem/report-problem.component';
-import {MatSelectModule} from "@angular/material/select";
+import {DashboardCardsGradesComponent} from './components/dashboard-cards-grades/dashboard-cards-grades.component';
+import {DashboardGradesTablesComponent} from './components/dashboard-grades-tables/dashboard-grades-tables.component';
+import {
+  DashboardGradesTableCardComponent
+} from './components/dashboard-grades-table-card/dashboard-grades-table-card.component';
+import {HttpClientModule} from '@angular/common/http';
+import {ReportProblemComponent} from './components/report-problem/report-problem.component';
 
 
 @NgModule({
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MatSidenavModule, MatButtonModule, MatStepperModule, MatFormFieldModule, MatInputModule, MatTableModule, MatCardModule,HttpClientModule, ReactiveFormsModule, FormsModule, MatSelectModule,],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MatSidenavModule, MatButtonModule, MatStepperModule, MatFormFieldModule, MatInputModule, MatTableModule, MatCardModule, HttpClientModule, ReactiveFormsModule, FormsModule, MatSelectModule,],
   declarations: [AppComponent, SidebarComponent, StepperComponent, TitleBoxContainerComponent, GradesTableComponent, GradesTablePageComponent, ProfilPageComponent, PageDashboardComponent, DashboardCardsCfcComponent, DashboardCardsGradesComponent, DashboardGradesTablesComponent, DashboardGradesTableCardComponent, PonderationComponent, ChangeGradeComponent, ReportProblemComponent],
   providers: [],
   bootstrap: [AppComponent],
