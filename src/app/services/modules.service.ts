@@ -23,6 +23,10 @@ export class ModulesService {
 }
 
 
+updateModule(module: ModuleModel, newGrade: string): Observable<ModuleModel> {
+  const url = `http://localhost:3000/modules/${module.id}`;
+  return this.http.put<ModuleModel>(url, { ...module, grade: newGrade });
+}
  
 
   private handleError<T>(operation = 'operation', result?: T) {
