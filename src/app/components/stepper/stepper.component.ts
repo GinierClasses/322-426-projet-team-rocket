@@ -37,11 +37,7 @@ export class StepperComponent implements OnInit {
     });
   }
 
-  goToNextStep() {
-    if (this.stepper) {
-      this.stepper.next();
-    }
-  }
+  
 
   onModuleSelectionChange(event: any) {
     this.selectedModule = event.value;
