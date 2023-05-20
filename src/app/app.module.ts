@@ -27,11 +27,13 @@ import { DashboardCardsGradesComponent } from './components/dashboard-cards-grad
 import { DashboardGradesTablesComponent } from './components/dashboard-grades-tables/dashboard-grades-tables.component';
 import { DashboardGradesTableCardComponent } from './components/dashboard-grades-table-card/dashboard-grades-table-card.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ReportProblemComponent } from './components/report-problem/report-problem.component';
+import {MatSelectModule} from "@angular/material/select";
 
 
 @NgModule({
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MatSidenavModule, MatButtonModule, MatStepperModule, MatFormFieldModule, MatInputModule, MatTableModule, MatCardModule,HttpClientModule, ReactiveFormsModule, FormsModule, MatSelectModule,],
-  declarations: [AppComponent, SidebarComponent, StepperComponent, TitleBoxContainerComponent, GradesTableComponent, GradesTablePageComponent, ProfilPageComponent, PageDashboardComponent, DashboardCardsCfcComponent, DashboardCardsGradesComponent, DashboardGradesTablesComponent, DashboardGradesTableCardComponent, PonderationComponent, ChangeGradeComponent],
+  declarations: [AppComponent, SidebarComponent, StepperComponent, TitleBoxContainerComponent, GradesTableComponent, GradesTablePageComponent, ProfilPageComponent, PageDashboardComponent, DashboardCardsCfcComponent, DashboardCardsGradesComponent, DashboardGradesTablesComponent, DashboardGradesTableCardComponent, PonderationComponent, ChangeGradeComponent, ReportProblemComponent],
   providers: [],
   bootstrap: [AppComponent],
 

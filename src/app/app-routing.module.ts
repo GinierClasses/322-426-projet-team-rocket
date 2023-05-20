@@ -6,6 +6,7 @@ import {GradesTablePageComponent} from "./components/grades-table-page/grades-ta
 import {ChangeGradeComponent} from "./components/change-grade/change-grade.component";
 import {PonderationComponent} from "./components/ponderation/ponderation.component";
 import {PageDashboardComponent} from "./components/page-dashboard/page-dashboard.component";
+import {ReportProblemComponent} from "./components/report-problem/report-problem.component";
 
 
 const routes: Routes = [
@@ -16,6 +17,7 @@ const routes: Routes = [
   {path: 'profil', component: ProfilPageComponent},
   {path: 'change', component: ChangeGradeComponent},
   {path: 'dashboard', component: PageDashboardComponent},
+  {path: 'problem', component: ReportProblemComponent},
   {path: '**', component: PageDashboardComponent}
 ];
 

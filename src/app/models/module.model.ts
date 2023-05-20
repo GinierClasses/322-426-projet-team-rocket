@@ -3,7 +3,8 @@ export interface ModuleModel {
   name: string;
   number: number;
   description: string;
-  grade: number
-  year:number
-
+  grade: number;
+  type:string;
+  year:number;
+  date: string;
 }

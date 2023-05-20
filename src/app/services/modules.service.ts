@@ -1,7 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, throwError } from 'rxjs';
-import { catchError, tap } from 'rxjs/operators';
 import { ModuleModel } from '../models/module.model';
 
 @Injectable({
@@ -24,6 +23,10 @@ export class ModulesService {
 }
 
 
+updateModule(module: ModuleModel, newGrade: string): Observable<ModuleModel> {
+  const url = `http://localhost:3000/modules/${module.id}`;
+  return this.http.put<ModuleModel>(url, { ...module, grade: newGrade });
+}
  
 
   private handleError<T>(operation = 'operation', result?: T) {

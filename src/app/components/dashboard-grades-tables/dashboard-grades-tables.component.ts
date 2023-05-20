@@ -1,24 +1,29 @@
-import {Component} from '@angular/core';
-
-export interface coursEPSIC {
-  name: string;
-  note: number;
-}
-
-const ELEMENT_DATA: coursEPSIC[] = [
-  {name: 'Module 165 - Utiliser des bases de données NoSQL', note: 5},
-  {name: 'Module 254 - Décrire des processus métier dans son propre environnement professionnel', note: 5},
-  {name: 'Module 322 - Concevoir et implémenter des interfaces utilisateur', note: 5},
-  {name: 'Module 346 - Concevoir et réaliser des solutions cloud', note: 5},
-  {name: 'Module 426 - Développer un logiciel avec des méthodes agiles', note: 5}
-];
+import { Component, OnInit } from '@angular/core';
+import { ModulesService } from 'src/app/services/modules.service';
+import { ModuleModel } from 'src/app/models/module.model';
 
 @Component({
   selector: 'app-dashboard-grades-tables',
   templateUrl: './dashboard-grades-tables.component.html',
   styleUrls: ['./dashboard-grades-tables.component.scss']
 })
-export class DashboardGradesTablesComponent {
+export class DashboardGradesTablesComponent implements OnInit {
   displayedColumns: string[] = ['name', 'note', 'edit'];
-  dataSource = ELEMENT_DATA;
+  dataSource: ModuleModel[] = [];
+
+  constructor(private modulesService: ModulesService) { }
+
+  ngOnInit() {
+    this.modulesService.getModules()
+      .subscribe(
+        modules => {
+          const sortedModules = modules.sort((a, b) => {
+            return new Date(b.date).getTime() - new Date(a.date).getTime();
+          });
+          this.dataSource = sortedModules.slice(0,5);
+        },
+        error => console.error(error)
+      );
+  }
+
 }
