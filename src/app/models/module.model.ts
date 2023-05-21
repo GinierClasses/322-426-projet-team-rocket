@@ -4,7 +4,7 @@ export interface ModuleModel {
   number: number;
   description: string;
   grade: number;
-  type:string;
-  year:number;
+  type: string;
+  year: number;
   date: string;
 }

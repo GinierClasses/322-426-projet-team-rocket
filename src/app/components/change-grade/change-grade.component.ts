@@ -1,13 +1,13 @@
-import {Component} from '@angular/core';
-import {FormBuilder, Validators} from "@angular/forms";
+import { Component } from '@angular/core';
+import { FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-change-grade',
   templateUrl: './change-grade.component.html',
-  styleUrls: ['./change-grade.component.scss']
+  styleUrls: ['./change-grade.component.scss'],
 })
 export class ChangeGradeComponent {
-  title = "Modifier une note";
+  title = 'Modifier une note';
 
   firstFormGroup = this._formBuilder.group({
     firstCtrl: ['', Validators.required],
@@ -17,6 +17,5 @@ export class ChangeGradeComponent {
   });
   isLinear = false;
 
-  constructor(private _formBuilder: FormBuilder) {
-  }
+  constructor(private _formBuilder: FormBuilder) {}
 }
