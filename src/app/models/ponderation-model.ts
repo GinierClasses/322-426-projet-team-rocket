@@ -1,6 +1,6 @@
 export interface PonderationModel {
-    id: number;
-    type: string;
-    description:string;
-    ponderation:number;
-  }
+  id: number;
+  type: string;
+  description: string;
+  ponderation: number;
+}
