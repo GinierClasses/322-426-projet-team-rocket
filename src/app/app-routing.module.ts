@@ -12,7 +12,6 @@ import { ResetPasswordComponent } from 'src/app/components/reset-password/reset-
 import { SignUpFormComponent } from 'src/app/components/sign-up-form/sign-up-form.component';
 
 const routes: Routes = [
-  { path: '', pathMatch: 'full', redirectTo: 'dashboard' },
   { path: 'login', component: LoginComponent },
   { path: 'reset-password', component: ResetPasswordComponent },
   { path: 'sign-up', component: SignUpFormComponent },

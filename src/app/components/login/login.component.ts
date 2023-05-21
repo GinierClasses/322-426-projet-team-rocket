@@ -50,6 +50,7 @@ export class LoginComponent {
     const enteredPassword = this.password.value;
 
     if (enteredEmail === fakeUserEmail && enteredPassword === 'Plagi@t!') {
+      localStorage.setItem('isLoggedIn', 'true');
       this.router.navigate(['/dashboard']);
     } else {
       alert('Email ou mot de passe incorrect');
