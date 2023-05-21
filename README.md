@@ -34,4 +34,4 @@ Pour vérifier que ce soit bien le cas, vous pouvez lancer les commandes suivant
 1.  Ouvrir un terminal dans le dossier du projet
 2.  Lancer la commande suivante : `npm start` (Cela va lancer également le json-server avec les données du back-end)
 3.  Ouvrir un navigateur et aller à l'adresse suivante : `http://localhost:4200/`
-4.  Identifiants : `Email : flavio.pacifico@eduvaud.ch` / `Password: Plagi@t!`
+4.  Identifiants : `Email: flavio.pacifico@eduvaud.ch` / `Password: Plagi@t!`
