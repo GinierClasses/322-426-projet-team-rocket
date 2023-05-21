@@ -1,7 +1,7 @@
 <h1>Se connecter à AfterGoodNotes</h1>
 <mat-card class="card-container">
   <mat-card-content class="card-content">
-    <form>
+    <form (submit)="login()">
       <mat-form-field appearance="outline">
         <mat-label>Entrer votre email</mat-label>
         <input
@@ -16,7 +16,15 @@
       </mat-form-field>
       <mat-form-field appearance="outline">
         <mat-label>Mot de Passe</mat-label>
-        <input matInput placeholder="Mot de passe" required />
+        <input
+          matInput
+          placeholder="Mot de passe"
+          [formControl]="password"
+          required
+        />
+        <mat-error *ngIf="password.invalid">{{
+          getPasswordErrorMessage()
+        }}</mat-error>
       </mat-form-field>
       <div class="reset-password-link">
         <a routerLink="/reset-password">Mot de passe oublié ?</a>
