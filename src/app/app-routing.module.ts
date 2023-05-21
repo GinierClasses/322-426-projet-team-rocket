@@ -8,10 +8,14 @@ import { PageDashboardComponent } from './components/page-dashboard/page-dashboa
 import { ReportProblemComponent } from './components/report-problem/report-problem.component';
 import { AddGradeComponent } from './components/add-grade/add-grade.component';
 import { LoginComponent } from 'src/app/components/login/login.component';
+import { ResetPasswordComponent } from 'src/app/components/reset-password/reset-password.component';
+import { SignUpFormComponent } from 'src/app/components/sign-up-form/sign-up-form.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'dashboard' },
   { path: 'login', component: LoginComponent },
+  { path: 'reset-password', component: ResetPasswordComponent },
+  { path: 'sign-up', component: SignUpFormComponent },
   { path: 'ponderations', component: PonderationComponent },
   { path: 'add-grade', component: AddGradeComponent },
   { path: 'grades', component: GradesTablePageComponent },

@@ -30,6 +30,8 @@ import { ReportProblemComponent } from './components/report-problem/report-probl
 import { AddGradeComponent } from './components/add-grade/add-grade.component';
 import { LoginComponent } from 'src/app/components/login/login.component';
 import { RouterModule } from '@angular/router';
+import { ResetPasswordComponent } from './components/reset-password/reset-password.component';
+import { SignUpFormComponent } from './components/sign-up-form/sign-up-form.component';
 
 @NgModule({
   imports: [
@@ -66,6 +68,8 @@ import { RouterModule } from '@angular/router';
     ChangeGradeComponent,
     ReportProblemComponent,
     LoginComponent,
+    ResetPasswordComponent,
+    SignUpFormComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],
