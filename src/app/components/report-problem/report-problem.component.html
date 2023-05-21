@@ -1,0 +1,46 @@
+<app-sidebar>
+  <app-title-box-container [dynamicTitle]="title">
+    <div class="report-container">
+      <mat-form-field>
+        <input matInput placeholder="Nom" required>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Prénom" required>
+      </mat-form-field>
+
+      <mat-form-field class="report-field-class">
+        <mat-label>Classe</mat-label>
+        <mat-select>
+          <mat-option value="option">INFO 2A</mat-option>
+          <mat-option value="option">INFO 2B</mat-option>
+          <mat-option value="option">INFO 2C</mat-option>
+          <mat-option value="option">INFO 2D</mat-option>
+          <mat-option value="option">INFO 2E</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+
+      <mat-form-field>
+        <mat-label>Page à signaler</mat-label>
+        <mat-select>
+          <mat-option value="option">Dashboard</mat-option>
+          <mat-option value="option">1ère année</mat-option>
+          <mat-option value="option">2ème année</mat-option>
+          <mat-option value="option">3ème année</mat-option>
+          <mat-option value="option">4ème année</mat-option>
+          <mat-option value="option">Profil</mat-option>
+          <mat-option value="option">Ajouter une note</mat-option>
+          <mat-option value="option">Modifier une note</mat-option>
+          <mat-option value="option">Pondérations</mat-option>
+          <mat-option value="option">Description des modules</mat-option>
+        </mat-select>
+
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Descriptif du problème</mat-label>
+        <textarea matInput></textarea>
+      </mat-form-field>
+      <button color="primary" mat-raised-button>Envoyer</button>
+    </div>
+  </app-title-box-container>
+</app-sidebar>

@@ -1,0 +1,33 @@
+<app-sidebar>
+
+  <div id="moyennes">
+    <!------------------------------------------------------- CFC ------------------------------------------------------->
+    <app-dashboard-cards-cfc [brancheName]="cfc">
+      <h1>{{ cfcAverage }}</h1>
+    </app-dashboard-cards-cfc>
+
+    <!------------------------------------------------ Culture Generale ------------------------------------------------->
+    <app-dashboard-cards-grades [brancheName]="cultureG">
+      <h2>{{ cultureGAverage }}</h2>
+    </app-dashboard-cards-grades>
+
+    <!-------------------------------------------------- Informatique --------------------------------------------------->
+    <app-dashboard-cards-grades [brancheName]="informatique">
+      <h2>{{ informatiqueAverage }}</h2>
+    </app-dashboard-cards-grades>
+
+    <!-------------------------------------------------- Base Elargie --------------------------------------------------->
+    <app-dashboard-cards-grades [brancheName]="baseElargie">
+      <h2>{{ baseElargieAverage }}</h2>
+    </app-dashboard-cards-grades>
+  </div>
+  <!------------------------------------------------ Dernieres notes -------------------------------------------------->
+  <app-dashboard-grades-table-card [lastGrades]="derniereNote">
+    <app-dashboard-grades-tables></app-dashboard-grades-tables>
+  </app-dashboard-grades-table-card>
+
+  <div id="buttons">
+    <button routerLink="/problem">Signaler un problème</button>
+    <button routerLink="/ponderations">Pondérations</button>
+  </div>
+</app-sidebar>

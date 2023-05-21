@@ -1,12 +1,14 @@
 import {Component} from '@angular/core';
-import {FormBuilder, Validators} from '@angular/forms';
+import {FormBuilder, Validators} from "@angular/forms";
 
 @Component({
-  selector: 'app-stepper',
-  templateUrl: './stepper.component.html',
-  styleUrls: ['./stepper.component.scss']
+  selector: 'app-change-grade',
+  templateUrl: './change-grade.component.html',
+  styleUrls: ['./change-grade.component.scss']
 })
-export class StepperComponent {
+export class ChangeGradeComponent {
+  title = "Modifier une note";
+
   firstFormGroup = this._formBuilder.group({
     firstCtrl: ['', Validators.required],
   });
