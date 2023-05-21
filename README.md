@@ -1,6 +1,6 @@
 # GoodAfterNotes
 
-GoodAfterNotes est une application web qui permet aux étudiants de rentrer leurs notes pour avoir une vision d'ensemble de l'avancée de leur CFC.
+GoodAfterNotes est une application web qui permet aux étudiants de l'EPSIC de rentrer leurs notes pour avoir une vision d'ensemble de l'avancée de leur CFC.
 
 ## Dépendances nécessaires :
 
