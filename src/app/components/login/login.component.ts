@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-page-login',
-  templateUrl: './page-login.component.html',
-  styleUrls: ['./page-login.component.scss'],
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.scss'],
 })
-export class PageLoginComponent {
+export class LoginComponent {
   email = new FormControl('', [
     Validators.required,
     Validators.pattern(/^[A-Za-z0-9._%+-]+@eduvaud\.ch$/),

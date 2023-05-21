@@ -7,11 +7,11 @@ import { PonderationComponent } from './components/ponderation/ponderation.compo
 import { PageDashboardComponent } from './components/page-dashboard/page-dashboard.component';
 import { ReportProblemComponent } from './components/report-problem/report-problem.component';
 import { AddGradeComponent } from './components/add-grade/add-grade.component';
-import { PageLoginComponent } from 'src/app/components/page-login/page-login.component';
+import { LoginComponent } from 'src/app/components/login/login.component';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'dashboard' },
-  { path: 'login', component: PageLoginComponent },
+  { path: 'login', component: LoginComponent },
   { path: 'ponderations', component: PonderationComponent },
   { path: 'add-grade', component: AddGradeComponent },
   { path: 'grades', component: GradesTablePageComponent },

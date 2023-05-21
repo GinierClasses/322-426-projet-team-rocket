@@ -28,7 +28,7 @@ import { DashboardGradesTableCardComponent } from './components/dashboard-grades
 import { HttpClientModule } from '@angular/common/http';
 import { ReportProblemComponent } from './components/report-problem/report-problem.component';
 import { AddGradeComponent } from './components/add-grade/add-grade.component';
-import { PageLoginComponent } from 'src/app/components/page-login/page-login.component';
+import { LoginComponent } from 'src/app/components/login/login.component';
 import { RouterModule } from '@angular/router';
 
 @NgModule({
@@ -65,7 +65,7 @@ import { RouterModule } from '@angular/router';
     PonderationComponent,
     ChangeGradeComponent,
     ReportProblemComponent,
-    PageLoginComponent,
+    LoginComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],
