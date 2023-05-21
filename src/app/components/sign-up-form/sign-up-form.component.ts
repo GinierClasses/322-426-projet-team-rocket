@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sign-up-form',
@@ -35,6 +36,8 @@ export class SignUpFormComponent {
     // At least 8 characters
     Validators.pattern(/(?=.{8,})/),
   ]);
+
+  constructor(private router: Router) {}
 
   getNameErrorMessage() {
     if (this.name.hasError('required')) {
@@ -119,5 +122,9 @@ export class SignUpFormComponent {
     }
 
     return '';
+  }
+
+  redirectToLogin() {
+    this.router.navigate(['/login']);
   }
 }
