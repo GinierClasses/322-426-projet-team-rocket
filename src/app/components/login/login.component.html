@@ -16,15 +16,7 @@
       </mat-form-field>
       <mat-form-field appearance="outline">
         <mat-label>Mot de Passe</mat-label>
-        <input
-          matInput
-          placeholder="Mot de passe"
-          [formControl]="password"
-          required
-        />
-        <mat-error *ngIf="password.invalid">{{
-          getPasswordErrorMessage()
-        }}</mat-error>
+        <input matInput placeholder="Mot de passe" required />
       </mat-form-field>
       <div class="reset-password-link">
         <a routerLink="/reset-password">Mot de passe oublié ?</a>

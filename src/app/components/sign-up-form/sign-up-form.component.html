@@ -4,38 +4,68 @@
     <form>
       <mat-form-field appearance="outline">
         <mat-label>Nom</mat-label>
-        <input matInput placeholder="Pacifico" required />
+        <input matInput placeholder="Pacifico" [formControl]="name" required />
+        <mat-error *ngIf="name.invalid">{{ getNameErrorMessage() }}</mat-error>
       </mat-form-field>
       <mat-form-field appearance="outline">
         <mat-label>Prénom</mat-label>
-        <input matInput placeholder="Flavio" required />
+        <input
+          matInput
+          placeholder="Flavio"
+          [formControl]="firstname"
+          required
+        />
+        <mat-error *ngIf="firstname.invalid">{{
+          getFirstnameErrorMessage()
+        }}</mat-error>
       </mat-form-field>
       <mat-form-field appearance="outline">
         <mat-label>Date de naissance</mat-label>
-        <input matInput [matDatepicker]="picker" />
+        <input matInput [matDatepicker]="picker" [formControl]="birthdate" />
         <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
         <mat-datepicker #picker></mat-datepicker>
+        <mat-error *ngIf="birthdate.invalid">{{
+          getBirthdateErrorMessage()
+        }}</mat-error>
       </mat-form-field>
       <mat-form-field appearance="outline">
         <mat-label>Classe</mat-label>
-        <mat-select>
+        <mat-select [formControl]="selectedClass" required>
           <mat-option *ngFor="let class of classes" [value]="class.value">
             {{ class.viewValue }}
           </mat-option>
         </mat-select>
+        <mat-error *ngIf="selectedClass.invalid">{{
+          getClassErrorMessage()
+        }}</mat-error>
       </mat-form-field>
-
       <mat-form-field appearance="outline">
         <mat-label>Email</mat-label>
-        <input matInput placeholder="prenom.nom@eduvaud.ch" required />
+        <input
+          matInput
+          placeholder="prenom.nom@eduvaud.ch"
+          [formControl]="email"
+          required
+        />
+        <mat-error *ngIf="email.invalid">{{
+          getEmailErrorMessage()
+        }}</mat-error>
       </mat-form-field>
       <mat-form-field appearance="outline">
         <mat-label>Mot de passe</mat-label>
-        <input matInput placeholder="Mot de passe" required />
+        <input
+          matInput
+          placeholder="Mot de passe"
+          [formControl]="password"
+          required
+        />
+        <mat-error *ngIf="password.invalid">{{
+          getPasswordErrorMessage()
+        }}</mat-error>
       </mat-form-field>
       <mat-form-field appearance="outline">
         <mat-label>Confirmation mot de passe</mat-label>
-        <input matInput placeholder="Conformation mot de passe" required />
+        <input matInput placeholder="Confirmation mot de passe" required />
       </mat-form-field>
       <button mat-raised-button color="primary">S'inscrire</button>
     </form></mat-card-content
