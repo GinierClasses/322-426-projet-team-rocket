@@ -101,51 +101,6 @@
     },
     {
       "id": 12,
-      "name": "Module 165 - Utiliser des bases de données NoSQL",
-      "description": "Description du module",
-      "grade": 6,
-      "type": "Informatique",
-      "year": 2,
-      "date": "2023-01-01"
-    },
-    {
-      "id": 13,
-      "name": "Module 254 - Décrire des processus métier dans son propre environnement professionnel",
-      "description": "Description du module",
-      "grade": 3,
-      "type": "Informatique",
-      "year": 2,
-      "date": "2023-01-02"
-    },
-    {
-      "id": 14,
-      "name": "Module 322 - Concevoir et implémenter des interfaces utilisateur",
-      "description": "Description du module",
-      "grade": 4,
-      "type": "Informatique",
-      "year": 2,
-      "date": "2023-01-03"
-    },
-    {
-      "id": 15,
-      "name": "Module 346 - Concevoir et réaliser des solutions cloud",
-      "description": "Description du module",
-      "grade": 5,
-      "type": "Informatique",
-      "year": 2,
-      "date": "2023-01-04"
-    },
-    {
-      "id": 16,
-      "name": "Module 426 - Développer un logiciel avec des méthodes agiles",
-      "description": "Description du module",
-      "grade": 4.5,
-      "type": "Informatique",
-      "year": 2,
-      "date": "2023-01-05"
-    },
-    {
-      "id": 17,
       "name": "Module 114 - Mettre en œuvre des systèmes de codification, de compression et d'encryptage",
       "description": "Description du module",
       "grade": 6,
@@ -154,7 +109,25 @@
       "date": "2023-01-06"
     },
     {
-      "id": 18,
+      "id": 13,
+      "name": "Module 165 - Utiliser des bases de données NoSQL",
+      "description": "Description du module",
+      "grade": 6,
+      "type": "Informatique",
+      "year": 2,
+      "date": "2023-01-01"
+    },
+    {
+      "id": 14,
+      "name": "Module 254 - Décrire des processus métier dans son propre environnement professionnel",
+      "description": "Description du module",
+      "grade": 3,
+      "type": "Informatique",
+      "year": 2,
+      "date": "2023-01-02"
+    },
+    {
+      "id": 15,
       "name": "Module 320 - Programmation orientée objet",
       "description": "Description du module",
       "grade": 4.5,
@@ -163,7 +136,25 @@
       "date": "2023-01-07"
     },
     {
-      "id": 19,
+      "id": 16,
+      "name": "Module 322 - Concevoir et implémenter des interfaces utilisateur",
+      "description": "Description du module",
+      "grade": 4,
+      "type": "Informatique",
+      "year": 2,
+      "date": "2023-01-03"
+    },
+    {
+      "id": 17,
+      "name": "Module 346 - Concevoir et réaliser des solutions cloud",
+      "description": "Description du module",
+      "grade": 5,
+      "type": "Informatique",
+      "year": 2,
+      "date": "2023-01-04"
+    },
+    {
+      "id": 18,
       "name": "Module 347 - Utiliser un service avec des conteneurs",
       "description": "Description du module",
       "grade": 5,
@@ -172,8 +163,17 @@
       "date": "2023-01-08"
     },
     {
+      "id": 19,
+      "name": "Module 426 - Développer un logiciel avec des méthodes agiles",
+      "description": "Description du module",
+      "grade": 4.5,
+      "type": "Informatique",
+      "year": 2,
+      "date": "2023-01-05"
+    },
+    {
       "id": 20,
-      "name": "Anglais 2ième",
+      "name": "Anglais 2ème",
       "description": "Description du module",
       "grade": 5.5,
       "type": "Base élargie",
@@ -182,7 +182,7 @@
     },
     {
       "id": 21,
-      "name": "Math 2ième",
+      "name": "Math 2ème",
       "description": "Description du module",
       "grade": 3.5,
       "type": "Base élargie",
@@ -191,7 +191,7 @@
     },
     {
       "id": 22,
-      "name": "Culture générale 2ième",
+      "name": "Culture générale 2ème",
       "description": "Description du module",
       "grade": 4,
       "type": "Culture générale",
@@ -200,6 +200,24 @@
     },
     {
       "id": 23,
+      "name": "Module 183 - Implémenter la sécurité d’une application",
+      "description": "Description du module",
+      "grade": 4.5,
+      "type": "Informatique",
+      "year": 3,
+      "date": "2024-02-03"
+    },
+    {
+      "id": 24,
+      "name": "Module 223 - Réaliser des applications multiutilisateurs orientées objets",
+      "description": "Description du module",
+      "grade": 4,
+      "type": "Informatique",
+      "year": 3,
+      "date": "2024-02-04"
+    },
+    {
+      "id": 25,
       "name": "Module 322 - Programmer de manière fonctionnelle",
       "description": "Description du module",
       "grade": 5.5,
@@ -208,35 +226,8 @@
       "date": "2024-02-01"
     },
     {
-      "id": 24,
-      "name": "Moduel 450 - Tester des applications",
-      "description": "Description du module",
-      "grade": 4,
-      "type": "Informatique",
-      "year": 3,
-      "date": "2024-02-02"
-    },
-    {
-      "id": 25,
-      "name": "Moduel 183 - Implémenter la sécurité d’une application",
-      "description": "Description du module",
-      "grade": 4.5,
-      "type": "Informatique",
-      "year": 3,
-      "date": "2024-02-03"
-    },
-    {
       "id": 26,
-      "name": "Moduel 223 - Réaliser des applications multiutilisateurs orientées objets",
-      "description": "Description du module",
-      "grade": 4,
-      "type": "Informatique",
-      "year": 3,
-      "date": "2024-02-04"
-    },
-    {
-      "id": 27,
-      "name": "Moduel 335 - Réaliser une application pour mobile",
+      "name": "Module 335 - Réaliser une application pour mobile",
       "description": "Description du module",
       "grade": 4,
       "type": "Informatique",
@@ -244,8 +235,17 @@
       "date": "2024-02-05"
     },
     {
+      "id": 27,
+      "name": "Module 450 - Tester des applications",
+      "description": "Description du module",
+      "grade": 4,
+      "type": "Informatique",
+      "year": 3,
+      "date": "2024-02-02"
+    },
+    {
       "id": 28,
-      "name": "Anglais 3ième",
+      "name": "Anglais 3ème",
       "description": "Description du module",
       "grade": 4,
       "type": "Base élargie",
@@ -254,7 +254,7 @@
     },
     {
       "id": 29,
-      "name": "Culture générale 3ième",
+      "name": "Culture générale 3ème",
       "description": "Description du module",
       "grade": 5.5,
       "type": "Culture générale",
@@ -263,25 +263,7 @@
     },
     {
       "id": 30,
-      "name": "Moduel 321 - Programmer des systèmes distribués",
-      "description": "Description du module",
-      "grade": 6,
-      "type": "Informatique",
-      "year": 4,
-      "date": "2025-01-01"
-    },
-    {
-      "id": 31,
-      "name": "Moduel 324 - Prendre en charge des processus DevOps avec des outils logiciels",
-      "description": "Description du module",
-      "grade": 5,
-      "type": "Informatique",
-      "year": 4,
-      "date": "2025-02-01"
-    },
-    {
-      "id": 32,
-      "name": "Moduel 241 - Initialiser des solutions ICT innovantes",
+      "name": "Module 241 - Initialiser des solutions ICT innovantes",
       "description": "Description du module",
       "grade": 5,
       "type": "Informatique",
@@ -289,8 +271,8 @@
       "date": "2025-03-01"
     },
     {
-      "id": 33,
-      "name": "Moduel 245 - Mettre en œuvre des solutions ICT innovantes",
+      "id": 31,
+      "name": "Module 245 - Mettre en œuvre des solutions ICT innovantes",
       "description": "Description du module",
       "grade": 3.5,
       "type": "Informatique",
@@ -298,8 +280,26 @@
       "date": "2025-03-01"
     },
     {
+      "id": 32,
+      "name": "Module 321 - Programmer des systèmes distribués",
+      "description": "Description du module",
+      "grade": 6,
+      "type": "Informatique",
+      "year": 4,
+      "date": "2025-01-01"
+    },
+    {
+      "id": 33,
+      "name": "Module 324 - Prendre en charge des processus DevOps avec des outils logiciels",
+      "description": "Description du module",
+      "grade": 5,
+      "type": "Informatique",
+      "year": 4,
+      "date": "2025-02-01"
+    },
+    {
       "id": 34,
-      "name": "Anglais 4ième",
+      "name": "Anglais 4ème",
       "description": "Description du module",
       "grade": 5.5,
       "type": "Base élargie",
@@ -308,7 +308,7 @@
     },
     {
       "id": 35,
-      "name": "Culture générale 4ième",
+      "name": "Culture générale 4ème",
       "description": "Description du module",
       "grade": 5,
       "type": "Culture générale",

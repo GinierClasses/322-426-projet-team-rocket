@@ -23,12 +23,4 @@ export class ModulesService {
     const url = `http://localhost:3000/modules/${module.id}`;
     return this.http.put<ModuleModel>(url, { ...module, grade: newGrade });
   }
-
-  private handleError<T>(operation = 'operation', result?: T) {
-    return (error: any): Observable<T> => {
-      console.error(error);
-      // Perform any additional error handling logic here
-      return throwError(error);
-    };
-  }
 }

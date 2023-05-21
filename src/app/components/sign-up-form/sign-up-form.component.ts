@@ -12,11 +12,11 @@ export class SignUpFormComponent {
   firstname = new FormControl('', [Validators.required]);
   birthdate = new FormControl('', [Validators.required]);
   classes = [
-    { value: 'INFO2A', viewValue: 'INFO2A' },
-    { value: 'INFO2B', viewValue: 'INFO2B' },
-    { value: 'INFO2C', viewValue: 'INFO2C' },
-    { value: 'INFO2D', viewValue: 'INFO2D' },
-    { value: 'INFO2E', viewValue: 'INFO2E' },
+    { value: 'INFO 2A', viewValue: 'INFO 2A' },
+    { value: 'INFO 2B', viewValue: 'INFO 2B' },
+    { value: 'INFO 2C', viewValue: 'INFO 2C' },
+    { value: 'INFO 2D', viewValue: 'INFO 2D' },
+    { value: 'INFO 2E', viewValue: 'INFO 2E' },
   ];
   selectedClass = new FormControl('', [Validators.required]);
   email = new FormControl('', [
