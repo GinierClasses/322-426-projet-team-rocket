@@ -1,1 +1,43 @@
-<p>sign-up-form works!</p>
+<h1>S'inscrire à GoodAfterNotes</h1>
+<mat-card class="card-container">
+  <mat-card-content class="card-content">
+    <form>
+      <mat-form-field appearance="outline">
+        <mat-label>Nom</mat-label>
+        <input matInput placeholder="Pacifico" required />
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Prénom</mat-label>
+        <input matInput placeholder="Flavio" required />
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Date de naissance</mat-label>
+        <input matInput [matDatepicker]="picker" />
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Classe</mat-label>
+        <mat-select>
+          <mat-option *ngFor="let class of classes" [value]="class.value">
+            {{ class.viewValue }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="prenom.nom@eduvaud.ch" required />
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Mot de passe</mat-label>
+        <input matInput placeholder="Mot de passe" required />
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Confirmation mot de passe</mat-label>
+        <input matInput placeholder="Conformation mot de passe" required />
+      </mat-form-field>
+      <button mat-raised-button color="primary">S'inscrire</button>
+    </form></mat-card-content
+  ></mat-card
+>

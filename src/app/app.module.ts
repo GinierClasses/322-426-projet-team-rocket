@@ -32,6 +32,8 @@ import { LoginComponent } from 'src/app/components/login/login.component';
 import { RouterModule } from '@angular/router';
 import { ResetPasswordComponent } from './components/reset-password/reset-password.component';
 import { SignUpFormComponent } from './components/sign-up-form/sign-up-form.component';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
 
 @NgModule({
   imports: [
@@ -50,6 +52,8 @@ import { SignUpFormComponent } from './components/sign-up-form/sign-up-form.comp
     FormsModule,
     MatSelectModule,
     RouterModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
   ],
   declarations: [
     AppComponent,
