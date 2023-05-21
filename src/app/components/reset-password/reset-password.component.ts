@@ -11,6 +11,7 @@ export class ResetPasswordComponent {
     Validators.required,
     Validators.pattern(/^[A-Za-z0-9._%+-]+@eduvaud\.ch$/),
   ]);
+  isResetEmailSent = false;
 
   getEmailErrorMessage() {
     if (this.email.hasError('required')) {
@@ -22,5 +23,11 @@ export class ResetPasswordComponent {
     }
 
     return '';
+  }
+
+  sendResetEmail() {
+    // Faking the email sending
+    // Not implemented yet
+    this.isResetEmailSent = true;
   }
 }
