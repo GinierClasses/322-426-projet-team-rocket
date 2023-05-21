@@ -3,11 +3,15 @@
     <mat-card-title class="profil-title">Flavio Pacifico</mat-card-title>
     <mat-card-content class="profil-content">
       <h3>INFO 2E</h3>
-      <button class="profil-btn" color="warn" href="#" mat-raised-button>Se déconnecter
-        <i class="material-icons">power_settings_new
-        </i>
+      <button
+        class="profil-btn"
+        color="warn"
+        mat-raised-button
+        (click)="logout()"
+      >
+        Se déconnecter
+        <i class="material-icons">power_settings_new </i>
       </button>
     </mat-card-content>
   </mat-card>
 </app-sidebar>
-
