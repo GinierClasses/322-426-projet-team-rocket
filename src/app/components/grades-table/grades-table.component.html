@@ -1,0 +1,26 @@
+<div class="container">
+  <table [dataSource]="dataSource" class="mat-elevation-z8" mat-table matSort>
+    <!-- Name Column -->
+    <ng-container matColumnDef="name">
+      <th *matHeaderCellDef mat-header-cell mat-sort-header>Module</th>
+      <td *matCellDef="let module" mat-cell>{{ module.name }}</td>
+    </ng-container>
+    <!-- Grade Column -->
+    <ng-container matColumnDef="grade">
+      <th *matHeaderCellDef mat-header-cell mat-sort-header>Note</th>
+      <td *matCellDef="let module" mat-cell>{{ module.grade }}</td>
+    </ng-container>
+    <!-- Edit Column -->
+    <ng-container matColumnDef="edit">
+      <th *matHeaderCellDef id="editColumn" mat-header-cell>
+        <a href="/change-grade">
+          <span class="material-icons">edit</span>
+        </a>
+      </th>
+      <td *matCellDef="let element" mat-cell></td>
+    </ng-container>
+    <tr *matHeaderRowDef="displayedColumns" mat-header-row></tr>
+    <tr *matRowDef="let row; columns: displayedColumns" mat-row></tr>
+  </table>
+  <button routerLink="/add-grade">Ajouter une note</button>
+</div>

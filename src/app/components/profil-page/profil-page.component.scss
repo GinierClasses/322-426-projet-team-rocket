@@ -1,0 +1,39 @@
+.profil-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .profil-title,
+  .profil-content {
+    border: solid 1px rgba(0, 0, 0, 0.12);
+    border-radius: 3px;
+    background-color: #ffffff;
+  }
+
+  .profil-title {
+    padding: 5px 80px;
+  }
+
+  .profil-content {
+    display: flex;
+    flex-direction: column;
+    border-top: none;
+    justify-content: space-evenly;
+    padding: 0 30px;
+
+    h3 {
+      margin: 0;
+      padding-top: 80px;
+    }
+
+    .profil-btn {
+      display: flex;
+      flex-direction: column-reverse;
+      margin: 90px 0 20px 0;
+      padding: 30px 40px;
+    }
+  }
+}

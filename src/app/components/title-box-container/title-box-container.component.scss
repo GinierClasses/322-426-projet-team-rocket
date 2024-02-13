@@ -1,0 +1,26 @@
+.box-container {
+  display: flex;
+  height: calc(100vh - 140px);
+  flex-direction: column;
+  margin: 70px 100px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+  padding: 50px;
+  overflow: auto;
+
+  .box-title {
+    margin-top: -72px;
+    margin-left: -84px;
+    background-color: #fff;
+    padding: 10px 20px;
+    position: absolute;
+    font-size: 30px;
+  }
+
+  .box-content {
+    overflow: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}

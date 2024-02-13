@@ -1,0 +1,32 @@
+.sidebar-container {
+  height: 100vh;
+}
+
+.sidebar {
+  width: 260px;
+  height: 100vh;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    li {
+      list-style: none;
+      margin: 15px 10px;
+
+      &:last-child {
+        margin-top: auto;
+      }
+
+      a {
+        width: 100%;
+        padding: 30px 0;
+
+        p {
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+}

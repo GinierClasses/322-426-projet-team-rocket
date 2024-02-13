@@ -1,0 +1,43 @@
+.container {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+
+  table {
+    box-shadow: none;
+
+    th {
+      text-align: start;
+    }
+
+    a {
+      color: black;
+      padding-top: 1px;
+
+      span {
+        font-size: 16px;
+      }
+    }
+
+    #editColumn {
+      text-align: end;
+    }
+
+    td {
+      font-size: 13px;
+    }
+
+    .help {
+      font-size: 10px !important;
+    }
+  }
+
+  button {
+    background-color: #4350af;
+    color: white;
+    border: none;
+    padding: 10px 13px;
+    border-radius: 5px;
+    margin-top: 50px;
+  }
+}

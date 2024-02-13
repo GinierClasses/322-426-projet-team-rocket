@@ -1,0 +1,20 @@
+<app-sidebar>
+  <app-title-box-container [dynamicTitle]="title">
+    <div class="pd-container">
+      <p class="pd-title">Description</p>
+      <div
+        *ngFor="let ponderation of ponderations"
+        class="pd-description-with-percent"
+      >
+        <p class="pd-descripton">{{ ponderation.description }}</p>
+        <p class="pd-percent">{{ ponderation.ponderation }}%</p>
+      </div>
+      <div class="pd-link">
+        <p class="pd-title-link">Liens vers l'ordonnance du conseil fédéral</p>
+        <a href="https://www.fedlex.admin.ch/eli/oc/2020/941/fr"
+          >Pondérations</a
+        >
+      </div>
+    </div>
+  </app-title-box-container>
+</app-sidebar>

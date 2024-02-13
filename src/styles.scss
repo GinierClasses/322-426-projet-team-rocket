@@ -1,0 +1,29 @@
+$bg-color: #fff;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-size: 14px;
+}
+
+.mat-drawer-container {
+  background-color: $bg-color;
+}
+
+li {
+  list-style-type: none;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+button {
+  cursor: pointer;
+}
